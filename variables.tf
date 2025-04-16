@@ -16,12 +16,8 @@ variable "instance_type" {
 
 variable "instance_roles" {
   default = [
-    "jenkins",
     "k8s-master",
     "k8s-worker",
-    "db",         # PostgreSQL + MongoDB
-    "kafka-redis",
-    "elk",
-    "sonarqube"
+    "kafka-redis"
   ]
 }
